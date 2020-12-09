@@ -13,6 +13,14 @@
 		EC2BB2C0257E938F00230DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2BB2BE257E938F00230DF7 /* Main.storyboard */; };
 		EC2BB2C2257E939100230DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2BB2C1257E939100230DF7 /* Assets.xcassets */; };
 		EC2BB2C5257E939100230DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2BB2C3257E939100230DF7 /* LaunchScreen.storyboard */; };
+		EC2BB2D5257E971300230DF7 /* Jobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2BB2D4257E971300230DF7 /* Jobe.swift */; };
+		EC2BB2D9257E99D200230DF7 /* APISerives.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2BB2D8257E99D200230DF7 /* APISerives.swift */; };
+		EC44DA89257EC80C0001CEE5 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44DA88257EC80C0001CEE5 /* JobTableViewCell.swift */; };
+		EC44DA8D257EC9D60001CEE5 /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44DA8C257EC9D60001CEE5 /* JobsViewModel.swift */; };
+		EC44DA91257ED0270001CEE5 /* JobsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44DA90257ED0270001CEE5 /* JobsTableViewDataSource.swift */; };
+		EC44DA96257EE6CE0001CEE5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44DA95257EE6CE0001CEE5 /* String+Extension.swift */; };
+		EC87CD33258022F7006522EA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87CD32258022F7006522EA /* Date+Extension.swift */; };
+		EC87CD3625802F51006522EA /* JobDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87CD3525802F51006522EA /* JobDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		EC2BB2C1257E939100230DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC2BB2C4257E939100230DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC2BB2C6257E939100230DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2BB2D4257E971300230DF7 /* Jobe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jobe.swift; sourceTree = "<group>"; };
+		EC2BB2D8257E99D200230DF7 /* APISerives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISerives.swift; sourceTree = "<group>"; };
+		EC44DA88257EC80C0001CEE5 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		EC44DA8C257EC9D60001CEE5 /* JobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
+		EC44DA90257ED0270001CEE5 /* JobsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsTableViewDataSource.swift; sourceTree = "<group>"; };
+		EC44DA95257EE6CE0001CEE5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EC87CD32258022F7006522EA /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		EC87CD3525802F51006522EA /* JobDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,103 @@
 		EC2BB2B7257E938F00230DF7 /* TaskForOggetto */ = {
 			isa = PBXGroup;
 			children = (
-				EC2BB2B8257E938F00230DF7 /* AppDelegate.swift */,
-				EC2BB2BA257E938F00230DF7 /* SceneDelegate.swift */,
-				EC2BB2BC257E938F00230DF7 /* ViewController.swift */,
-				EC2BB2BE257E938F00230DF7 /* Main.storyboard */,
-				EC2BB2C1257E939100230DF7 /* Assets.xcassets */,
-				EC2BB2C3257E939100230DF7 /* LaunchScreen.storyboard */,
+				EC44DA94257EE6B60001CEE5 /* Extension */,
+				EC2BB2CF257E955600230DF7 /* Models */,
+				EC2BB2D0257E955F00230DF7 /* Views */,
+				EC2BB2D1257E956900230DF7 /* ViewModels */,
+				EC2BB2CE257E951700230DF7 /* Controllers */,
+				EC2BB2D2257E95BE00230DF7 /* Services */,
+				EC2BB2CD257E94E900230DF7 /* Common */,
 				EC2BB2C6257E939100230DF7 /* Info.plist */,
+				EC2BB2C1257E939100230DF7 /* Assets.xcassets */,
+				EC2BB2BE257E938F00230DF7 /* Main.storyboard */,
+				EC2BB2C3257E939100230DF7 /* LaunchScreen.storyboard */,
 			);
 			path = TaskForOggetto;
+			sourceTree = "<group>";
+		};
+		EC2BB2CD257E94E900230DF7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC2BB2B8257E938F00230DF7 /* AppDelegate.swift */,
+				EC2BB2BA257E938F00230DF7 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC2BB2CE257E951700230DF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC2BB2BC257E938F00230DF7 /* ViewController.swift */,
+				EC87CD3525802F51006522EA /* JobDetailsViewController.swift */,
+				EC44DA8F257ED0000001CEE5 /* Data Source */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC2BB2CF257E955600230DF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC2BB2D4257E971300230DF7 /* Jobe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC2BB2D0257E955F00230DF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC44DA87257EC7E10001CEE5 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC2BB2D1257E956900230DF7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EC44DA8C257EC9D60001CEE5 /* JobsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EC2BB2D2257E95BE00230DF7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC2BB2D3257E95CC00230DF7 /* API Serivce */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EC2BB2D3257E95CC00230DF7 /* API Serivce */ = {
+			isa = PBXGroup;
+			children = (
+				EC2BB2D8257E99D200230DF7 /* APISerives.swift */,
+			);
+			path = "API Serivce";
+			sourceTree = "<group>";
+		};
+		EC44DA87257EC7E10001CEE5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC44DA88257EC80C0001CEE5 /* JobTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EC44DA8F257ED0000001CEE5 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				EC44DA90257ED0270001CEE5 /* JobsTableViewDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		EC44DA94257EE6B60001CEE5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC44DA95257EE6CE0001CEE5 /* String+Extension.swift */,
+				EC87CD32258022F7006522EA /* Date+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +242,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2BB2BD257E938F00230DF7 /* ViewController.swift in Sources */,
+				EC44DA96257EE6CE0001CEE5 /* String+Extension.swift in Sources */,
+				EC2BB2D5257E971300230DF7 /* Jobe.swift in Sources */,
 				EC2BB2B9257E938F00230DF7 /* AppDelegate.swift in Sources */,
+				EC44DA89257EC80C0001CEE5 /* JobTableViewCell.swift in Sources */,
+				EC87CD33258022F7006522EA /* Date+Extension.swift in Sources */,
+				EC44DA91257ED0270001CEE5 /* JobsTableViewDataSource.swift in Sources */,
 				EC2BB2BB257E938F00230DF7 /* SceneDelegate.swift in Sources */,
+				EC87CD3625802F51006522EA /* JobDetailsViewController.swift in Sources */,
+				EC2BB2D9257E99D200230DF7 /* APISerives.swift in Sources */,
+				EC44DA8D257EC9D60001CEE5 /* JobsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ArmenAlikhanyan.TaskForOggetto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ArmenAlikhanyan.TaskForOggetto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
